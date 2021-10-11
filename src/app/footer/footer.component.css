@@ -1,0 +1,29 @@
+.footer{
+  background: #2a2a2a;
+  padding: 20px;
+  color: #fff;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footer ul{
+  display: flex;
+  list-style: none;
+  margin-top: 15px;
+}
+.footer ul li{
+  margin: 0 10px;
+}
+.footer ul li a{
+  color: #fff;
+}
+.footer ul li a i{
+  font-size: 20px;
+  transition: all 0.4s ease;
+}
+.footer ul li:hover a i{
+  color: royalblue;
+}

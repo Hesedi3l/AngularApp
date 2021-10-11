@@ -1,0 +1,83 @@
+.film .film_description{
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+}
+.film .film_description .imgBox{
+  width: 150px;
+  height: 200px;
+  position: relative;
+}
+.film{
+  margin-left: 50px;
+  padding-bottom: 50px;
+  margin-right: 30px
+}
+.film:not(:nth-child(1)){
+  margin-top: 80px;
+}
+.film .film_description .imgBox img{
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  position: relative;
+}
+.film .film_description .imgBox::after {
+  position: absolute;
+  background: royalblue;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  content: "1";
+  color: #eeeeee;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+}
+.film:nth-child(2) .film_description .imgBox::after{
+  content: "2";
+}
+.film:nth-child(3) .film_description .imgBox::after{
+  content: "3";
+}
+.film:nth-child(4) .film_description .imgBox::after{
+  content: "4";
+}
+.film:nth-child(5) .film_description .imgBox::after{
+  content: "5";
+}
+.film .film_description .textBox{
+  width: 300px;
+  margin-left: 25px;
+}
+.textBox h4{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.textBox p{
+  font-size: 15px;
+  margin: 10px 0;
+}
+.textBox p span{
+  color: rgba(42,42,42,0.5);
+}
+.textBox .desc_text{
+  font-size: 17px;
+  margin-top: 40px
+}
+.note{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+.note .bloc{
+  padding: 20px 10px;
+  width: 170px;
+  margin-right: 20px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 5px;
+}
